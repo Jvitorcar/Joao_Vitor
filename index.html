@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>João Vitor Cardoso — Comunicação Multimídia</title>
+<meta name="description" content="João Vitor Cardoso — profissional de Comunicação Multimídia em Guarapuava-PR. Produção audiovisual, fotografia, comunicação institucional, cobertura de eventos e desenvolvimento de sites.">
+<meta name="author" content="João Vitor Cardoso">
+<meta property="og:title" content="João Vitor Cardoso — Comunicação Multimídia">
+<meta property="og:description" content="Produção audiovisual, fotografia e presença digital. Da pauta à publicação.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/hero/hero.jpg">
+<meta name="theme-color" content="#100E0B">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="header">
+  <a href="#home" class="brand"><span class="dot"></span><span>João Vitor Cardoso</span></a>
+  <nav class="nav" id="nav">
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#fotografia">Fotografia</a>
+    <a href="#audiovisual">Audiovisual</a>
+    <a href="#sites">Sites</a>
+    <a href="#workshops">Workshops</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">Menu</button>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+  <div class="hero-media">
+    <img src="assets/img/hero/hero.jpg" alt="João Vitor Cardoso atrás da câmera" fetchpriority="high">
+  </div>
+  <span class="hero-corner tl"></span><span class="hero-corner tr"></span>
+  <span class="hero-corner bl"></span><span class="hero-corner br"></span>
+  <div class="hero-inner" id="heroInner"><!-- preenchido via JS --></div>
+  <div class="scrollcue">Role · Scroll</div>
+</section>
+
+<!-- ===================== SOBRE ===================== -->
+<section class="section" id="sobre">
+  <div class="wrap">
+    <div class="eyebrow"><span class="idx">01</span><span class="rule"></span><span>Sobre</span></div>
+    <div class="sobre-grid">
+      <div class="reveal">
+        <p class="h-display sobre-chamada" id="sobreChamada"></p>
+        <div class="sobre-text" id="sobreText"></div>
+        <div class="tags" id="sobreTags"></div>
+        <div class="traj" id="sobreTraj"></div>
+      </div>
+      <div class="sobre-media reveal vf">
+        <div class="main"><img id="sobreRetrato" alt=""></div>
+        <div class="sobre-apoio" id="sobreApoio"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJETOS ===================== -->
+<section class="section" id="projetos">
+  <div class="wrap">
+    <div class="eyebrow"><span class="idx">02</span><span class="rule"></span><span>Projetos em destaque</span></div>
+    <div id="projetosMount"></div>
+  </div>
+</section>
+
+<!-- ===================== FOTOGRAFIA ===================== -->
+<section class="section" id="fotografia">
+  <div class="wrap">
+    <div class="eyebrow"><span class="idx">03</span><span class="rule"></span><span>Fotografia</span></div>
+    <p class="lead reveal" id="fotoIntro" style="max-width:46ch;margin-bottom:40px"></p>
+    <div class="foto-grid reveal" id="fotoGrid"></div>
+  </div>
+</section>
+
+<!-- ===================== AUDIOVISUAL ===================== -->
+<section class="section" id="audiovisual">
+  <div class="wrap">
+    <div class="eyebrow"><span class="idx">04</span><span class="rule"></span><span>Audiovisual</span></div>
+    <p class="lead reveal" id="avIntro" style="max-width:48ch;margin-bottom:40px"></p>
+    <div class="reel reveal" id="avReel"></div>
+  </div>
+</section>
+
+<!-- ===================== SITES ===================== -->
+<section class="section" id="sites">
+  <div class="wrap">
+    <div class="eyebrow"><span class="idx">05</span><span class="rule"></span><span>Sites desenvolvidos</span></div>
+    <p class="lead reveal" id="sitesIntro" style="max-width:50ch;margin-bottom:40px"></p>
+    <div class="sites-grid reveal" id="sitesGrid"></div>
+  </div>
+</section>
+
+<!-- ===================== WORKSHOPS ===================== -->
+<section class="section" id="workshops">
+  <div class="wrap">
+    <div class="eyebrow"><span class="idx">06</span><span class="rule"></span><span>Workshops</span></div>
+    <div class="ws-grid">
+      <div class="ws-info reveal">
+        <h2 class="h-display" id="wsTitulo" style="margin-bottom:18px"></h2>
+        <div class="pub" id="wsPublico"></div>
+        <p id="wsTexto"></p>
+        <div class="proj-destaques" id="wsTopicos"></div>
+      </div>
+      <div class="ws-media reveal vf" id="wsMedia"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTATO ===================== -->
+<section class="section contato" id="contato">
+  <div class="wrap">
+    <div class="eyebrow"><span class="idx">07</span><span class="rule"></span><span>Contato</span></div>
+    <div class="contato-grid">
+      <div class="reveal">
+        <h2 id="contChamada"></h2>
+        <a class="wa" id="contWa" target="_blank" rel="noopener"></a>
+      </div>
+      <div class="clist reveal" id="contList"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <span id="footName"></span>
+  <span>Comunicação Multimídia · Guarapuava — PR</span>
+  <span class="top" id="toTop">Voltar ao topo ↑</span>
+</footer>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="close" id="lbClose" aria-label="Fechar">✕</button>
+  <button class="nav-btn prev" id="lbPrev" aria-label="Anterior">‹</button>
+  <img id="lbImg" src="" alt="">
+  <button class="nav-btn next" id="lbNext" aria-label="Próxima">›</button>
+  <div class="lbcap" id="lbCap"></div>
+</div>
+
+<noscript style="position:fixed;inset:0;background:#100E0B;color:#F3EFE7;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px;font-family:Georgia,serif;z-index:99">
+  Este portfólio precisa de JavaScript ativado para exibir as galerias e vídeos.
+</noscript>
+
+<script src="js/conteudo.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
